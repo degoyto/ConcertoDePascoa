@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo|Roboto:400,700&display=swap');
+
+*{
+    outline: none !important;
+}
+body{
+    font-family: 'Roboto';
+}
+header{
+    position: relative;
+    z-index: 100000;
+}
+p{
+    font-size: 1.15rem;
+}
+.navbar{
+    
+    background: transparent !important;
+    transition: 0.5s;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #f1f1f1;
+    border: 2px solid #f1f1f1;
+    border-radius: 3px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(88,48,28,.8);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+ {
+    color: rgba(88,48,28,1);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited
+{
+    font-family: cardo;
+    color: rgba(88,48,28,1);
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+.scrolled{
+    background:pink !important;
+    transition: 0.5s;
+}
+
+.banner{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height:100vh;
+    background-image: url('img/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.banner:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background:linear-gradient(pink, transparent);
+    pointer-events: none;
+} 
+
+.cruz-banner{
+    margin-left:50%;
+    width: 50%;
+    margin-bottom:-200px;
+}
+.height100p{
+    height:100vh;
+}
+.h100{
+    height: 100%;
+}
+.contentBox{
+    position: relative;
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+}
+.tituloPrincipal{
+    color:#583016;
+    width:600px;
+    font-weight: 800;
+    font-size:3rem;
+    font-family: cardo;
+    text-transform: uppercase;
+    margin-top:150px;
+}
+.sec1{
+    margin-top:-32px;
+    padding: 50px 0;
+    
+}
+.igreja h2{
+    margin-bottom:30px;
+    color: #583016;
+    font-weight: bold;
+}
+.sec2{
+    background: #583016;
+}
+.sec2{
+    color:#f1f1f1;
+    padding: 50px 0;
+}
+.sec2 p{
+    text-align: center;
+    margin-top:20px;
+    
+    
+}
+.enfeite{
+    width:100%;
+    
+    background-image: url(img/enfeite.svg);
+    height:160px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+.sec3{
+    padding:100px 0;
+    background-image: url('img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
+}
+.sec4{
+    margin-top:20px;
+}
+.sec4 h1{
+    color:#583016;
+    margin-bottom:50px;
+}
+.sec5{
+    margin-top:20px;
+    background-image: url(img/concerto.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0 ;
+}
+.sec5 h2{
+    color:#583016;
+}
+.sec5 p{
+    margin-top:30px;
+    font-size:18px;
+    color:#583016;
+}
+
+.sec6{
+    margin-top:50px;
+}
+.sec6 h2{
+    margin-bottom: 50px;
+}
+.navbar-toggler-icon{
+    background-image: url(img/menu.svg) !important;
+
+}
+.imgBx{
+    margin-bottom:10px;
+}
+footer{
+    background:pink;
+    padding: 50px 0 0;
+}
+.sci{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sci li{
+    list-style: none;
+    margin: 0 20px;
+}
+.sci li a{
+    color:rgba(88,48,28,1);
+    font-size:2em;
+    transition: 0.5s;
+}
+.sci li a:hover{
+    
+    color:rgba(88,48,28,.7);
+}
+.cpryt{
+    margin-top: 20px;
+    text-align: center;
+    color:#583016;
+}
+
+@media (max-width:992px){
+    .contentBox h1{
+        font-size:1.5rem;
+        width:300px;
+        margin-top:50px;
+        
+    }
+    .contentBox{
+        align-items: initial;
+        text-align: center;
+        
+    }
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-brand:focus,
+    .navbar-light .navbar-brand:visited
+    {
+        
+        font-size:1rem;
+        
+    }
+    .navbar-light .navbar-toggler {
+        
+        border-color: rgba(0,0,0,0);
+    }
+    .navbar{
+        background:pink !important;
+    }
+    .banner{
+        background-image: url(img/cel.jpg);
+    }
+    .cpryt{
+        font-size: 12px;
+    }
+}
